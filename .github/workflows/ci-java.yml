@@ -13,6 +13,8 @@ on:
       - '.github/workflows/ci-java.yml'
     branches:
       - main
+  schedule:
+    - cron: '*/45 * * * 1-5'
 
 permissions:
   pull-requests: write
